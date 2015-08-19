@@ -2,18 +2,11 @@
 
 from conf import config
 from conf import images
-from gnomebgmanager import GnomeBgManager
-from osxbgmanager import OsxBgManager
 
 import urllib
 import os
 import random
-import sys
-
-if sys.platform == "darwin":
-    bgmanager = OsxBgManager()
-else:
-    bgmanager = GnomeBgManager()
+from managers import bgmanager
 
 
 def download_image(img_file):
