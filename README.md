@@ -1,5 +1,5 @@
-Earth Background
+Desktop Background
 ----------------
-Change your Gnome background according to a selected beautiful images from Goolge Earth.
+Change your Gnome background according to a selected beautiful images from Goolge Earth and other sources.
 
-Uses the images selected by https://earthview.withgoogle.com downloaded from the Google CDN.
+Desktop background uses also Google Earth images selected by https://earthview.withgoogle.com and are downloaded from the Google CDN.
