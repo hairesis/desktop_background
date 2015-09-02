@@ -3,6 +3,8 @@
 from background.earth import get_image
 from background.managers import bgmanager
 
+__version__ = '1-earth'
+
 
 def set_background():
     bgmanager.set_background(get_image())
