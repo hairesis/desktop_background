@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from background.earth import get_image
+from background.flikr import get_image
 from background.managers import bgmanager
 
 __version__ = '1-earth'
