@@ -1,4 +1,6 @@
-API_KEY = '5f28264895e573c4b78c7fe6d81ce459'
+import flikrapp
+
+API_KEY = flikrapp.key
 
 BASE_API_URL = 'https://api.flickr.com/services/rest/?method={0}&api_key={1}&extras={2}&media=photo&page=1&format=json&nojsoncallback=1&text={3}&page={4}&date={5}'
 PLUGIN_NAME = 'desktop_background:flykr'
