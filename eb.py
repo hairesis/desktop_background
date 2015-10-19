@@ -2,7 +2,7 @@
 
 import logging
 import importlib
-from background.managers import bgmanager
+from plugins.managers import bgmanager
 
 logging.basicConfig()
 
@@ -13,7 +13,7 @@ __version__ = '1-flikr'
 
 
 def get_plugin(name='earth'):
-    return importlib.import_module('background.%s' % name)
+    return importlib.import_module('plugins.%s' % name)
 
 plugin = get_plugin()
 

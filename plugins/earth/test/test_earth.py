@@ -1,4 +1,4 @@
-from background.earth import get_random_image, get_image
+from plugins.earth import get_random_image, get_image
 
 
 def test_get_random_image():
