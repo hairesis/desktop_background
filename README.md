@@ -7,5 +7,5 @@ Desktop Background uses Google Earth images selected by https://earthview.withgo
 ### Usage
 
 ```bash
-desktop_background.py -s flikr
+./desktop_background.py -s flikr
 ```
