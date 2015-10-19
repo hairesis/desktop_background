@@ -1,5 +1,3 @@
-import sys
-import os
 from setuptools import find_packages, setup
 
 config = {
@@ -8,7 +6,7 @@ config = {
     'author_email': '0x41ndrea@gmail.com',
     'version': '1',
     'packages': find_packages(),
-    'scripts': ['eb.py'],
+    'scripts': ['desktop_background.py'],
     'name': 'desktop_background'
 }
 
