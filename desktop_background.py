@@ -36,7 +36,7 @@ if __name__ == '__main__':
     plugin_name = _parse_arguments() or 'earth'
     try:
         logger.info(
-            "chnging desktop background using '%s' plugin" % plugin_name)
+            "changing desktop background using '%s' plugin" % plugin_name)
         plugin = get_plugin(plugin_name)
     except ImportError as ex:
         logger.warning(
