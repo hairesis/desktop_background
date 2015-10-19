@@ -2,7 +2,7 @@
 
 import logging
 import importlib
-from plugins.managers import bgmanager
+from managers import bgmanager
 
 logging.basicConfig()
 
