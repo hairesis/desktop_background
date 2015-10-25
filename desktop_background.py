@@ -24,7 +24,13 @@ def _parse_arguments():
     parser.add_argument('-s', '--source',
                         nargs='?', default='earth',
                         type=str, help='flikr earth')
+    parser.add_argument('-v', '--verbose', action='count', default=0)
+
     args = parser.parse_args()
+    log_level = logging.WARN - 10*args.verbose
+    if log_level < 0:
+        log_level = logging.DEBUG
+    logger.setLevel(log_level)
     return args.source
 
 
@@ -38,6 +44,7 @@ if __name__ == '__main__':
         logger.info(
             "changing desktop background using '%s' plugin" % plugin_name)
         plugin = get_plugin(plugin_name)
+        logger.debug("test debug")
     except ImportError as ex:
         logger.warning(
             "No '%s' plugin found, fallback to default: 'earth'" % plugin_name)
